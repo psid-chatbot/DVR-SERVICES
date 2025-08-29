@@ -33,6 +33,7 @@ header {
   font-size: 18px;
 }
 
+/* Navbar */
 nav ul {
   list-style: none;
   display: flex;
@@ -52,6 +53,13 @@ nav a {
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
+}
+
+/* Hamburger */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
 }
 
 /* Hero */
@@ -163,40 +171,50 @@ footer .social-links a {
   text-decoration: none;
 }
 
-/* 📱 Mobile Responsive Fix */
+/* 📱 Mobile Responsive */
 @media (max-width: 768px) {
   .header-container {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px 15px;
+    flex-wrap: wrap;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+  }
+
+  nav.active {
+    display: block;
+    margin-top: 10px;
   }
 
   nav ul {
     flex-direction: column;
     gap: 10px;
     width: 100%;
-    margin-top: 10px;
-  }
-
-  nav ul li {
-    width: 100%;
   }
 
   nav ul li a {
     display: block;
-    padding: 8px 0;
-    width: 100%;
+    padding: 10px;
+    background: #ff6600;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
   }
 
   .contact-btn {
-    margin-top: 10px;
     width: 100%;
+    margin-top: 10px;
   }
 
   .contact-btn a {
     display: block;
-    text-align: center;
     width: 100%;
+    text-align: center;
   }
 
   .hero-container {
