@@ -29,6 +29,10 @@ header {
   align-items: center;
 }
 
+.logo h1 {
+  font-size: 18px;
+}
+
 nav ul {
   list-style: none;
   display: flex;
@@ -157,4 +161,54 @@ footer .social-links a {
   color: #ff6600;
   margin: 0 5px;
   text-decoration: none;
+}
+
+/* 📱 Mobile Responsive Fix */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 8px 0;
+    width: 100%;
+  }
+
+  .contact-btn {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .contact-btn a {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h2 {
+    font-size: 22px;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+  }
 }
