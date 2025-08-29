@@ -15,13 +15,20 @@
       <div class="logo">
         <h1>🧼 DVR Cleaning Services</h1>
       </div>
-      <nav>
+
+      <!-- Hamburger Menu Button -->
+      <div class="menu-toggle" id="menu-toggle">
+        ☰
+      </div>
+
+      <nav id="navbar">
         <ul>
           <li><a href="#home">🏠 Home</a></li>
           <li><a href="#categories">🧹 Services</a></li>
           <li><a href="#contact">📞 Contact</a></li>
         </ul>
       </nav>
+
       <div class="contact-btn">
         <a href="tel:+917676273618">📱 Call Now</a>
       </div>
@@ -137,6 +144,15 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    // Toggle navbar on mobile
+    const toggle = document.getElementById("menu-toggle");
+    const navbar = document.getElementById("navbar");
+
+    toggle.addEventListener("click", () => {
+      navbar.classList.toggle("active");
+    });
+  </script>
+
 </body>
 </html>
